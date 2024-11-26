@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+.head1{
+    position: relative;
+    left: -50px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul  li{
+    color: goldenrod;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 0.3em solid goldenrod;
+    letter-spacing: 0.1em;
+    font-weight:bold ;
+    width: 12em;
+    height: 3em;
+    border-radius: 0.5em;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    cursor: pointer;
+    line-height: 2em;
+    overflow: hidden;
+}
+nav ul li span{
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    background-color: goldenrod;
+    transform: translatey(150%);
+    border-radius: 50%;
+    transition: 0.5s;
+    z-index: -1;
+
+}
+
+nav ul li:hover span{
+    transform: translatey(0) scale(2);
+}
+nav ul li:hover span:nth-child(4){
+    left: 0;
+    transition-delay: 0.2s;
+}
+nav ul li:hover span:nth-child(3){
+    left: 25%;
+    transition-delay: 0.3s;
+}
+nav ul li:hover span:nth-child(2){
+    left: 50%;
+    transition-delay: 0.4s;
+}
+nav ul li:hover span:nth-child(1){
+    left: 70%;
+    transition-delay: 0.5s;
+}
+button{
+    z-index: 0;
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: goldenrod;
+}
+li:hover a{
+    color: black;
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+}
